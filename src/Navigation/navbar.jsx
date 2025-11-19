@@ -1,4 +1,4 @@
-import React, { useState,useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 
 import { NavLink } from 'react-router-dom'
 import "./Navbar.css"
@@ -17,7 +17,7 @@ function Navbar() {
 
     const handleToggleMenu = () => {
         setIsMobile(prev => !prev);
-        if (isMobile) setOpenDropdown(false); 
+        if (isMobile) setOpenDropdown(false);
     };
 
 
@@ -34,7 +34,7 @@ function Navbar() {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (
-                aboutRef.current && 
+                aboutRef.current &&
                 !aboutRef.current.contains(event.target)
             ) {
                 setOpenDropdown(false);
@@ -49,22 +49,23 @@ function Navbar() {
 
     return (
         <div className="Navigation">
-            <a className='logo' href="/">Group Training</a>
+            <a className='logo' href="/">Jel Dev</a>
 
             <div className={isMobile ? "navbar active" : "navbar"}>
+                <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
 
                 <div className="aboutDropdown" ref={aboutRef}  >
-                    <div 
-                        className="dropdown-title" 
+                    <div
+                        className="dropdown-title"
                         onClick={handleDropdownClink}
                     >
-                        <h3>About   {openDropdown ? <FaAngleUp style={{fontSize:"10px"}} /> :<FaAngleDown style={{fontSize:"10px"}}  /> }</h3>
-                   
-                         
+                        <h3 className='flex items-center gap-1'>About   {openDropdown ? <FaAngleUp style={{ fontSize: "10px" }} /> : <FaAngleDown style={{ fontSize: "10px" }} />}</h3>
+
+
                     </div>
 
                     <div className={openDropdown ? "dropdown-menu show" : "dropdown-menu"}>
-                        <NavLink to="/about/company" onClick={handleLinkClick} className={({ isActive}) => isActive ? "nav-link active" : "nav-link"}>Company</NavLink>
+                        <NavLink to="/about/company" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Company</NavLink>
                         <NavLink to="/about/team" onClick={handleLinkClick}>Team</NavLink>
                         <NavLink to="/about/history" onClick={handleLinkClick}>History</NavLink>
                     </div>
@@ -77,7 +78,7 @@ function Navbar() {
             </div>
 
             <div className="togglemenu" onClick={handleToggleMenu}>
-                {isMobile ? <FaXmark style={{color:"#fff"}} /> : <MdMenu style={{color:"#fff"}} />}
+                {isMobile ? <FaXmark style={{ color: "#fff" }} /> : <MdMenu style={{ color: "#fff" }} />}
             </div>
         </div>
     )
