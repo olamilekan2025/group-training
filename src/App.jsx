@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './Navigation/navbar';
+import Footer from './Footer-page/footer';
 import About from "./Routes/About_page/about"
 import Services from "./Routes/Services_page/services";
 import Product from "./Routes/Product_page/product";
@@ -31,8 +32,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/menu" element={<Menu />} />
       </Routes>
-
-
+      <Footer/>
     </>
   )
 }
