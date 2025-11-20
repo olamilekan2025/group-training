@@ -78,7 +78,7 @@ function Faq() {
           <div className="title">
             <h2>Ask Us</h2>
 
-            <form action="https://usebasin.com/f/YOUR_FORM_ID" method="POST">
+            <form action="https://usebasin.com/f/84226a19c723" method="POST">
               <div className="formCombination">
                 <div>
                   <label>Your Name</label>
