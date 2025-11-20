@@ -234,7 +234,10 @@
 }
 
 @media screen and (max-width:896) {
-    
+    .DevelopmentCenter {
+        padding: 0px;
+        flex-direction: column;
+    }
 }
 
 
