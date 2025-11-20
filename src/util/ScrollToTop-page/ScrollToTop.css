@@ -1,0 +1,56 @@
+
+.top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  
+}
+
+
+.top button {
+  background:#4D61FF;
+  border: none;
+  outline: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  box-shadow: 0px 8px 25px #53595e;
+  color: #fff;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+
+.top button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 35px #4D61FF;
+  opacity: 1;
+}
+
+
+.top button svg {
+  transition: transform 0.3s ease;
+}
+
+.top button:hover svg {
+  transform: translateY(-2px);
+}
+
+
+.top {
+  animation: fadeIn 0.5s ease;
+}
+
+
+@media (max-width: 600px) {
+  .top button {
+    width: 48px;
+    height: 48px;
+  }
+}

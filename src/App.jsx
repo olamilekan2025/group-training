@@ -10,6 +10,7 @@ import Faq from "./Routes/Faq_page/faq";
 import Company from "./Routes/Company-page/company";
 import Team from "./Routes/Team-page/team"
 import History from './Routes/History-page/history';
+import ScrollToTop from './util/ScrollToTop-page/scrollToTop';
 import './App.css'
 import Home from './Routes/Home_Page/Home';
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/faq" element={<Faq />} />
       </Routes>
+      <ScrollToTop/>
       <Footer/>
     </>
   )

@@ -24,7 +24,7 @@ function Services() {
   return (
     <>
       <div className="services-startBusiness">
-        <p data-aos="fade-up">Plan to Start a Business ?</p>
+        <p className=" plan"data-aos="fade-up">Plan to Start a Business ?</p>
         <div className="services-cards-wrapper" >
           <div className="card" data-aos="fade-up" >
             <h3 data-aos="fade-down">Time Efficiency </h3>

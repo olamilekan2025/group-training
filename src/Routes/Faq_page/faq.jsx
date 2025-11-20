@@ -3,6 +3,7 @@ import img from "../../assets/1520043405009.jpg";
 import { FaQuestion, FaPlus } from "react-icons/fa";
 import { RiSubtractLine } from "react-icons/ri";
 
+
 import "./Faq.css";
 
 //  FIXED: renamed this so it doesn't conflict with the component name
@@ -97,7 +98,7 @@ function Faq() {
               <label>Message</label>
               <textarea name="message" required></textarea>
 
-              <button type="submit">Ask</button>
+              <button className="btn" type="submit">Ask</button>
             </form>
           </div>
         </div>

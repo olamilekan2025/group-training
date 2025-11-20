@@ -49,7 +49,7 @@ function Navbar() {
 
     return (
         <div className="Navigation">
-            <a className='logo' href="/">Jel Dev</a>
+            <a className='logo' href="/">JH World</a>
 
             <div className={isMobile ? "navbar active" : "navbar"}>
                 <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
