@@ -6,7 +6,7 @@ import About from "./Routes/About_page/about"
 import Services from "./Routes/Services_page/services";
 import Product from "./Routes/Product_page/product";
 import Pricing from "./Routes/Pricing_page/pricing";
-import Menu from "./Routes/Menu_page/menu";
+import Faq from "./Routes/Faq_page/faq";
 import Company from "./Routes/Company-page/company";
 import Team from "./Routes/Team-page/team"
 import History from './Routes/History-page/history';
@@ -30,7 +30,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/product" element={<Product />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
       <Footer/>
     </>

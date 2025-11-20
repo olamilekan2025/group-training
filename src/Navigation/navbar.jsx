@@ -74,7 +74,7 @@ function Navbar() {
                 <NavLink to="/services" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Services</NavLink>
                 <NavLink to="/product" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Product</NavLink>
                 <NavLink to="/pricing" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Pricing</NavLink>
-                <NavLink to="/menu" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Menu</NavLink>
+                <NavLink to="/faq" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Faq</NavLink>
             </div>
 
             <div className="togglemenu" onClick={handleToggleMenu}>

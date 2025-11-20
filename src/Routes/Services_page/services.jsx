@@ -25,24 +25,24 @@ function Services() {
     <>
       <div className="services-startBusiness">
         <p data-aos="fade-up">Plan to Start a Business ?</p>
-        <div className="services-cards-wrapper" data-aos="flip-left">
-          <div className="card">
-            <h3>Time Efficiency</h3>
-            <p>
+        <div className="services-cards-wrapper" >
+          <div className="card" data-aos="fade-up" >
+            <h3 data-aos="fade-down">Time Efficiency </h3>
+            <p  >
               Praesent sapien massa, convallis a pellentesque nec, egestas non
               nisi, lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
-          <div className="card advice">
-            <h3>Authentic Advice</h3>
-            <p>
+          <div className="card advice"  data-aos="fade-up" >
+            <h3 data-aos="fade-down">Authentic Advice</h3>
+            <p data-aos="flip-up">
               Praesent sapien massa, convallis a pellentesque nec, egestas non
               nisi, lorem ipsum dolor sit amet, consectetur.
             </p>
           </div>
-          <div className="card">
-            <h3>Personal Approach</h3>
-            <p>
+          <div  className="card"  data-aos="fade-down">
+            <h3 data-aos="fade-up">Personal Approach</h3>
+            <p data-aos="flip-left">
               Praesent sapien massa, convallis a pellentesque nec, egestas non
               nisi, lorem ipsum dolor sit amet, consectetur.
             </p>
