@@ -1,8 +1,11 @@
-/* * {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-} */
+@font-face {
+    font-family: Montserrat;
+    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Protest;
+    src: url(/src//assets/ProtestStrike-Regular.ttf);
+}
 
 .services-startBusiness {
   width: 100%;
@@ -17,9 +20,10 @@
 
 
 
-.services-startBusiness > p {
+.services-startBusiness > .plan {
   color: #fff;
   font-size: 50px;
+  font-family: Montserrat;
 }
 
 .services-startBusiness > .services-cards-wrapper {
@@ -53,12 +57,15 @@
 
 .card  > h3 {
     font-size: 25px;
+     font-family: Protest;
+     display: flex;
 }
 
  .card  > p {
     line-height: 30px;
     text-align: center;
     font-size:15px ;
+     font-family: Montserrat;
 
  }
 
@@ -83,7 +90,8 @@
 
 .ourService > p {
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
+     font-family: Protest;
 }
  
 
@@ -128,11 +136,13 @@
 
 .wordPress  > .text > h2 {
     color: #fff;
-    font-size: 25px;
+    font-size: 23px;
+     font-family: Protest;
 }
 .wordPress  > .text > p {
     color: #fff;
     font-size: 15px;
+     font-family: Montserrat;
 }
 
 @media screen and (max-width:896px) {
@@ -215,12 +225,14 @@
 .development-text > h2 {
     font-size: 40px;
     color: #fff;
+     font-family: Protest;
 }
 .development-text > p {
     font-size: 25px;
     color: #908f8f;
     /* text-align: center; */
     line-height: 40px;
+     font-family: Montserrat;
 }
 
 

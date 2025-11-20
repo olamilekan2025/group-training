@@ -1,8 +1,11 @@
-/* *{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-} */
+@font-face {
+    font-family: Montserrat;
+    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Protest;
+    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+}
 
 .Navigation {
     width: 100%;
@@ -15,7 +18,7 @@
     z-index: 100;
     position: fixed;
     top: 0%;
-    /* position: relative; */
+   
 }
 
 
@@ -25,6 +28,7 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    font-family: Montserrat;
 }
 
 .Navigation>.navbar {
@@ -40,12 +44,13 @@
     font-size: 15px;
     color: #fff;
     padding: 8px;
+    font-family:  Montserrat;
 }
 
 
 .navbar>a:hover {
     color: #4D61FF;
-    /* background-color: rgba(255, 255, 255, 0.1); */
+  
 }
 
 .navbar>a.active {
@@ -147,10 +152,10 @@
 
 .dropdown-menu {
     display: none;
-    background-color: #fff;
-    border-bottom: 2px solid red;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    background-color: rgb(0,0,0,0.3);
+    border-bottom: 2px solid #4D61FF ;
+    /* border-left: 1px solid #121313; */
+    /* border-right: 1px solid #4D61FF; */
     padding: 10px;
     flex-direction: column;
     border-radius: 15px;
@@ -167,7 +172,7 @@
 }
 
 .dropdown-menu a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 5px;
 }
@@ -175,7 +180,7 @@
 
 
 .dropdown-menu a:hover {
-    background-color: rgba(110, 15, 15, 0.1);
+    background-color: #4D61FF;
 }
 
 
@@ -183,12 +188,12 @@
 @media screen and (max-width:896px) {
     .dropdown-menu {
         position: relative;
-        /* stack inside mobile menu */
+       
         top: 0;
         left: 0;
         width: 100%;
         border: none;
-        /* background-color: blue; */
+     
     }
 
     .dropdown-title {
