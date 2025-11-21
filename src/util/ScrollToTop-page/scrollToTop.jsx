@@ -1,21 +1,19 @@
-import React, { useEffect, useState } from "react";
-import "./ScrollToTop.css";
+import React, { useState, useEffect } from "react";
 import { HiArrowSmUp } from "react-icons/hi";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import "./ScrollToTop.css";
 
-function ScrollToTop() {
-  const [visible, setVisible] = useState(false);
+function MessageAndScroll() {
+  const [showScroll, setShowScroll] = useState(false);
+  const [openMessage, setOpenMessage] = useState(false);
 
   useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.scrollY > 50) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+    const handleScroll = () => {
+      setShowScroll(window.scrollY > 200);
     };
 
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToTop = () => {
@@ -23,14 +21,49 @@ function ScrollToTop() {
   };
 
   return (
-    visible && (
-      <div className="top">
-        <button onClick={scrollToTop}>
-          <HiArrowSmUp style={{ color: "#fff", fontSize: "20px" }} />
-        </button>
+    <>
+      
+    <div className="ScroolMoverlay">
+        {openMessage && (
+        <div className="msg-popup">
+         <form className="forms" action="https://usebasin.com/f/84226a19c723" method="POST">
+           
+            <h3>Send Us a Message</h3>
+
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+
+            <button className="send-btn">Send Message</button>
+
+            <button
+              className="close-btn"
+              onClick={() => setOpenMessage(false)}
+            >
+              Close
+            </button>
+         
+         </form>
+        </div>
+      )}
+
+     
+      <div
+        className="msg-btn"
+        onClick={() => setOpenMessage(!openMessage)}
+      >
+        <IoChatbubbleEllipsesOutline size={20} />
       </div>
-    )
+
+     
+      {showScroll && (
+        <div className="scroll-btn" onClick={scrollToTop}>
+          <HiArrowSmUp size={20} />
+        </div>
+      )}
+    </div>
+    </>
   );
 }
 
-export default ScrollToTop;
+export default MessageAndScroll;

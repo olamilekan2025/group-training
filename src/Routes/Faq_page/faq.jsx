@@ -6,7 +6,7 @@ import { RiSubtractLine } from "react-icons/ri";
 
 import "./Faq.css";
 
-//  FIXED: renamed this so it doesn't conflict with the component name
+ 
 const faqData = [
   {
     question: "Your Question Title?",
@@ -73,7 +73,7 @@ function Faq() {
         </div>
       </div>
 
-      {/* FORM SECTION */}
+    
       <div className="far-wrapper">
         <div className="faqForm">
           <div className="title">
