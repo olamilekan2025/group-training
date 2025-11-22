@@ -64,6 +64,9 @@
   .footer-wrapper {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px 25px;
+    gap: 10px;
+    
+    
   }
 }
 
