@@ -174,12 +174,13 @@
 @media (max-width: 768px) {
   .switch-wrapper {
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
+   
   }
 
   .switch-button-ads {
     width: 100%;
-    margin-bottom: 20px;
+    flex-direction: column-reverse;
   }
 
   .switch-container {
