@@ -5,7 +5,7 @@ import Footer from './Footer-page/footer';
 import About from "./Routes/About_page/about"
 import Services from "./Routes/Services_page/services";
 import Product from "./Routes/Product_page/product";
-import Pricing from "./Routes/Pricing_page/pricing";
+import Blog from "./Routes/Blog_page/blog";
 import Faq from "./Routes/Faq_page/faq";
 import Company from "./Routes/Company-page/company";
 import Team from "./Routes/Team-page/team"
@@ -30,7 +30,7 @@ function App() {
 
         <Route path="/services" element={<Services />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<Faq />} />
       </Routes>
       <ScrollToTop/>
