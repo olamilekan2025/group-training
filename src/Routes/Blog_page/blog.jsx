@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import img0 from "../../assets/post1-1-360x320.jpg";
+import img1 from "../../assets/post3-1-360x320.jpg";
+import img2 from "../../assets/small.png";
 
 import img from "../../assets/hemlock-rock-landscaping-09.webp"
 import "./Blog.css"
@@ -89,7 +92,44 @@ function Blog() {
                 {article && (
                     <div className="switch-contect">
                         <h2>Article</h2>
-                        <div className="switch-panel"></div>
+                        <div className="switch-panel">
+                            <div className="articleImage">
+                                 <img src={img0} alt="" />
+                            </div>
+                            <div className="articleContent">
+                                <h2>A place of silence</h2>
+                                <h3 className='iconImage'>
+                                    <div className="image">
+                                        <img src={img2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h3>Elmntr</h3>
+                                        <p>9 November 2009</p>
+                                    </div>
+                                </h3>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
+                        <div className="switch-panel">
+                            <div className="articleImage">
+                                <img src={img1} alt="" />
+                            </div>
+                            <div className="articleContent">
+                                <h2>A place of silence</h2>
+                                <h3 className='iconImage'>
+                                    <div className="image">
+                                        <img src={img2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h3>Elmntr</h3>
+                                        <p>9 November 2009</p>
+                                    </div>
+                                </h3>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta ...</p>
+                                <button>Read more</button>
+                            </div>
+                        </div>
                     </div>
                 )}
                 {computer && (
