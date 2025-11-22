@@ -242,11 +242,11 @@
 }
 
 
- .development-text > a {
+ .development-text > .get-started-btn {
     width: 30%;
     height: 50px;
     border-radius: 50px;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
     background-color: #4D61FF;
     text-decoration: none;
@@ -256,6 +256,7 @@
     display: flex;
     gap: 10px;
 }
+
 
 
 @media screen and (max-width:896px) {
@@ -276,6 +277,10 @@
     .DevelopmentCenter > .development-text  {
         width: 100%;
         gap: 20px;
+    }
+
+    .development-text > .get-started-btn  {
+        width: 100%;
     }
 
     .development-text > h2  {

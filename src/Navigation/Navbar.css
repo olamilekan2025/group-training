@@ -9,6 +9,7 @@
 
 .Navigation {
     width: 100%;
+    height: 70px;
     padding: 20px 40px;
     background-color: rgba(21, 23, 25, .8);
     padding: 20px 60px;
@@ -24,13 +25,43 @@
 
 
 
-.Navigation>.logo {
+/* .Navigation>.logo {
     font-size: 30px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
     font-family: Montserrat;
+} */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"); 
+
+ svg {
+	font-family: "Bungee Outline", sans-serif;
+	width: 100%; height: 100%;
+} 
+svg text {
+	animation: stroke 10s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 27px;
+    font-family: Protest;
 }
+@keyframes stroke {
+	0%   {
+		fill: #FFF; stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: #fff; stroke: rgba(54,95,160,1); }
+	80%  {fill: #fff; stroke: rgba(54,95,160,1); stroke-width: 3; }
+	100% {
+		fill: #fff; stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+/* .wrapper {background-color: #FFFFFF}; */
+
 
 .Navigation>.navbar {
     gap: 20px;
