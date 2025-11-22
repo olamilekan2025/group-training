@@ -49,7 +49,14 @@ function Navbar() {
 
     return (
         <div className="Navigation">
-            <a className='logo' href="/">JH World</a>
+           
+            <div className="wrapper">
+	<svg>
+		<text x="50%" y="50%" dy=".35em" textAnchor="end">
+			JH WORLD
+		</text>
+	</svg>
+</div>
 
             <div className={isMobile ? "navbar active" : "navbar"}>
                 <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>

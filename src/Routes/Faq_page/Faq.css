@@ -160,12 +160,15 @@ button:hover {
   .faq-container {
     display: flex   ;
     flex-direction: column;
-    padding: 100px 30px;
+    padding: 100px 30px 15px 30px;
     
   }
 
   .faqImage img {
     height: 300px;
+  }
+  .faq-text h2  {
+    font-size: 23px;
   }
 
   .far-wrapper {
