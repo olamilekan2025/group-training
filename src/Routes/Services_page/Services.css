@@ -59,6 +59,7 @@
     font-size: 25px;
      font-family: Protest;
      display: flex;
+     color:#000
 }
 
  .card  > p {
@@ -149,6 +150,11 @@
     .services-startBusiness {
         padding: 8rem 10px;
         gap: 50px;
+    }
+
+    .services-startBusiness > .plan {
+        font-size: 25px;
+        font-weight: bold;
     }
 
     .services-startBusiness > p  {
