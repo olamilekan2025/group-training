@@ -64,31 +64,7 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
-  .shop-container {
-    padding: 40px 10px;
-  }
 
-  
-  .package-card img {
-    height: 180px;
-  }
-
-  .tabs button  {
-    width: 200px;
-    height: 35px;
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tabs {
-    gap: 8px;
-  }
-  .package-card img {
-    height: 160px;
-  }
-}
 
 
 
@@ -138,12 +114,7 @@
   margin: 12px 15px 8px 15px;
   color: #fff;
 }
-.price {
-  justify-content: center;
-  align-items: center;
-  display: flex;
 
-}
 
 .package-card p {
   font-size: 20px;
@@ -170,6 +141,40 @@
 
 .add-cart:hover {
   background-color: #005fcc;
+}
+
+
+@media screen and (max-width: 768px) {
+  .shop-container {
+    padding: 40px 10px;
+  }
+
+  .package-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ 
+ 
+}
+
+  
+  .package-card img {
+    height: 320px;
+    display: flex;
+  }
+
+  .tabs button  {
+    width: 200px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tabs {
+    gap: 8px;
+  }
+
 }
 
 

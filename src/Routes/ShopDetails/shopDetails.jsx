@@ -51,7 +51,7 @@ function ShopDetails({ addToCart }) {
 
         <h2 className="product-name">{pkg.name}</h2>
 
-        <p className="price">Price: ₦{pkg.price.toFixed(2)}</p>
+        <p className="prices">Price: ₦{pkg.price.toFixed(2)}</p>
 
         <p className={pkg.instock ? "stock" : "out-of-stock"}>
           {pkg.instock ? "In Stock" : "Out of Stock"}
@@ -68,7 +68,7 @@ function ShopDetails({ addToCart }) {
 
           {openDesc && (
             <div className="dropdown-content">
-              <p>{pkg.description}</p>
+              <p className="description">{pkg.description}</p>
             </div>
           )}
         </div>

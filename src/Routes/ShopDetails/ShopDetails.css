@@ -88,11 +88,11 @@
   color: #222;
 }
 
-.price {
+p {
   font-size: 22px;
   color: #4D61FF;
   font-weight: bold;
-  margin-right: 29.3rem;
+ 
 }
 
 
@@ -125,6 +125,14 @@
 .dropdown-content {
   padding: 15px;
   background: white;
+}
+
+.description {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #333;
+  line-height: 1.5;
+  display: flex;
 }
 
 
@@ -170,7 +178,8 @@
 
   .price {
     font-size: 20px;
-    margin-right: 12.4rem;
+    color: #fff;
+    margin-right: 0px;
   }
 
   .add-cart-btn  {
