@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 
-import {Link, NavLink } from 'react-router-dom'
+import {Link,  NavLink } from 'react-router-dom'
 import "./Navbar.css"
 import { MdMenu } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
