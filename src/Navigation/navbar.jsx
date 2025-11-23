@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 
-import { NavLink } from 'react-router-dom'
+import {Link, NavLink } from 'react-router-dom'
 import "./Navbar.css"
 import { MdMenu } from "react-icons/md";
 import { FaXmark } from "react-icons/fa6";
@@ -50,12 +50,15 @@ function Navbar() {
     return (
         <div className="Navigation">
            
-            <div className="wrapper">
-	<svg>
-		<text x="50%" y="50%" dy=".35em" textAnchor="end">
-			JH WORLD
-		</text>
-	</svg>
+    
+<div className="wrapper">
+  <Link to="/" className="logo-link">
+    <svg>
+      <text x="50%" y="50%" dy=".35em" textAnchor="end">
+        JH WORLD
+      </text>
+    </svg>
+  </Link>
 </div>
 
             <div className={isMobile ? "navbar active" : "navbar"}>
@@ -79,7 +82,7 @@ function Navbar() {
                 </div>
 
                 <NavLink to="/services" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Services</NavLink>
-                <NavLink to="/product" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Product</NavLink>
+                <NavLink to="/shop" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Shop</NavLink>
                 <NavLink to="/blog" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
                 <NavLink to="/faq" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Faq</NavLink>
             </div>
