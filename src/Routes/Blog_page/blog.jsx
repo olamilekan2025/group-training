@@ -7,6 +7,7 @@ import img4 from "../../assets/developer.jpg";
 import img5 from "../../assets/famous.jpg";
 import img6 from "../../assets/interview.jpg";
 import img from "../../assets/hemlock-rock-landscaping-09.webp";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "./Blog.css";
 
 function Blog() {
@@ -44,7 +45,6 @@ function Blog() {
           </div>
         </div>
 
-       
         <div className="ads-container">
           <div className="ads">
             <h2>Ads</h2>
@@ -63,7 +63,6 @@ function Blog() {
         </div>
       </div>
 
-     
       <div className="switch-container">
         {activeTab === "article" && (
           <div className="switch-contect">
@@ -71,6 +70,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img0} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -86,7 +88,6 @@ function Blog() {
                   </div>
                 </h3>
 
-                
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -103,6 +104,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img1} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -118,7 +122,6 @@ function Blog() {
                   </div>
                 </h3>
 
-                
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -140,6 +143,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img3} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -155,7 +161,6 @@ function Blog() {
                   </div>
                 </h3>
 
-                
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -177,6 +182,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img4} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -213,6 +221,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img5} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -228,7 +239,6 @@ function Blog() {
                   </div>
                 </h3>
 
-               
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -251,6 +261,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img1} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -266,7 +279,6 @@ function Blog() {
                   </div>
                 </h3>
 
-                
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -289,8 +301,10 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img5} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
-
               <div className="articleContent">
                 <h2>Principles of coldness</h2>
 
@@ -304,7 +318,6 @@ function Blog() {
                   </div>
                 </h3>
 
-               
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
@@ -321,6 +334,9 @@ function Blog() {
             <div className="switch-panel">
               <div className="articleImage">
                 <img src={img6} alt="" />
+                <div className="floatingIcon">
+                  <FaArrowUpRightFromSquare />
+                </div>
               </div>
 
               <div className="articleContent">
@@ -336,7 +352,6 @@ function Blog() {
                   </div>
                 </h3>
 
-                
                 <details className="dropdown-details">
                   <summary>Read more</summary>
 
