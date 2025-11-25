@@ -56,19 +56,7 @@ function Navbar() {
 
             <div className={isMobile ? "navbar active" : "navbar"}>
                 <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
-
-                {/* <div className="aboutDropdown" ref={aboutRef}>
-                    <div className="dropdown-title" onClick={handleDropdownClick}>
-                        <h3 className='flex items-center gap-1'>
-                            About {openDropdown ? <FaAngleUp style={{ fontSize: "10px" }} /> : <FaAngleDown style={{ fontSize: "10px" }} />}
-                        </h3>
-                    </div>
-                    <div className={openDropdown ? "dropdown-menu show" : "dropdown-menu"}>
-                        <NavLink to="/about/company" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Company</NavLink>
-                        <NavLink to="/about/team" onClick={handleLinkClick}>Team</NavLink>
-                        <NavLink to="/about/history" onClick={handleLinkClick}>History</NavLink>
-                    </div>
-                </div> */}
+                
 
                 <NavLink to="/services" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Services</NavLink>
                 <NavLink to="/shop" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Shop</NavLink>

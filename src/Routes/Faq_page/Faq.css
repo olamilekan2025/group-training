@@ -80,7 +80,7 @@
 }
 
 .title h2 {
-  /* text-align: center; */
+ 
   margin-bottom: 25px;
   color: #fff;
   font-size: 25px;
@@ -88,7 +88,7 @@
    font-family:  Protest;
 }
 
-/* Form */
+
 form {
   display: flex;
   flex-direction: column;
@@ -102,7 +102,7 @@ label {
    font-family:  Montserrat;
 }
 
-/* Two Column Input */
+
 .formCombination {
   display: flex;
   gap: 20px;
