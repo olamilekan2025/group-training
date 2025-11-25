@@ -1,10 +1,10 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+  font-family: Montserrat;
+  src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: Protest;
-    src: url(/src//assets/ProtestStrike-Regular.ttf);
+  font-family: Protest;
+  src: url(/src//assets/ProtestStrike-Regular.ttf);
 }
 
 .services-startBusiness {
@@ -17,8 +17,6 @@
   flex-direction: column;
   gap: 5rem;
 }
-
-
 
 .services-startBusiness > .plan {
   color: #fff;
@@ -33,10 +31,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
- 
 }
-
-
 
 .services-cards-wrapper > .card {
   background: #fff;
@@ -55,23 +50,20 @@
   gap: 20px;
 }
 
-.card  > h3 {
-    font-size: 25px;
-     font-family: Protest;
-     display: flex;
-     color:#000
+.card > h3 {
+  font-size: 25px;
+  font-family: Protest;
+  display: flex;
+  color: #000;
 }
 
- .card  > p {
-    line-height: 30px;
-    text-align: center;
-    font-size:15px ;
-     font-family: Montserrat;
-
- }
-
-
-
+.card > p {
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  font-family: Montserrat;
+}
 
 .services-cards-wrapper > .card.advice {
   border-color: blue;
@@ -81,226 +73,187 @@
 }
 
 .ourService {
-    width: 100%;
-    padding: 5rem 3rem;
-    background-color: #4D61FF;
-    gap: 40px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  padding: 5rem 3rem;
+  background-color: #4d61ff;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .ourService > p {
-    color: #fff;
-    font-size: 60px;
-     font-family: Protest;
+  color: #fff;
+  font-size: 60px;
+  font-family: Protest;
 }
- 
-
 
 .ourService > .ourService-wripper {
-    width: 100%;
-    display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-   
-   
-    gap: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
+  gap: 30px;
 }
 
-.ourService-wripper > .wordPress{
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    padding: 15px 10px;
-    
-    
+.ourService-wripper > .wordPress {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 15px 10px;
 }
 
 .wordPress > .icon {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    border: 1px solid #fff;
-    border-top-left-radius: 50px;
-    border-top-right-radius:50px ;
-    border-bottom-left-radius: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border: 1px solid #fff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wordPress > .text {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.wordPress > .text > h2 {
+  color: #fff;
+  font-size: 23px;
+  font-family: Protest;
+}
+.wordPress > .text > p {
+  color: #fff;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+
+@media screen and (max-width: 896px) {
+  .services-startBusiness {
+    padding: 8rem 10px;
+    gap: 50px;
+  }
+
+  .services-startBusiness > .plan {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .services-startBusiness > p {
+    font-size: 26px;
+  }
+  .services-cards-wrapper > .card {
+    gap: 10px;
+  }
+  .ourService {
+    padding: 1rem 1rem;
     justify-content: center;
     align-items: center;
-}
+  }
+  .ourService > p {
+    font-size: 50px;
+  }
 
-
-.wordPress  > .text {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.wordPress  > .text > h2 {
-    color: #fff;
-    font-size: 23px;
-     font-family: Protest;
-}
-.wordPress  > .text > p {
-    color: #fff;
-    font-size: 15px;
-     font-family: Montserrat;
-}
-
-@media screen and (max-width:896px) {
-    .services-startBusiness {
-        padding: 8rem 10px;
-        gap: 50px;
-    }
-
-    .services-startBusiness > .plan {
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    .services-startBusiness > p  {
-        font-size: 26px;
-    }
-    .services-cards-wrapper > .card {
-        gap: 10px;
-    }
-    .ourService{
-         padding: 1rem 1rem;
-         justify-content: center;
-         align-items: center;
-    }
-    .ourService > p  {
-        font-size: 50px;
-    }
-
-    .wordPress > .icon {
+  .wordPress > .icon {
     width: 40px;
     height: 40px;
     display: flex;
-   
-  
-    
-}
-.wordPress  > .text > h2 {
+  }
+  .wordPress > .text > h2 {
     font-size: 20px;
+  }
 }
-
-}
-
 
 .DevelopmentCenter {
-    background-color: #121313;
-    display: flex;
+  background-color: #121313;
+  display: flex;
   flex-direction: row;
-    padding: 10rem 3rem 5rem 3rem;
-    gap: 70px;
-   
+  padding: 10rem 3rem 5rem 3rem;
+  gap: 70px;
 }
 
-
-
 .DevelopmentCenter > .development-image {
-    width: 45%;
-    height: 600px;
-    display: flex;
- 
-   
-
+  width: 45%;
+  height: 600px;
+  display: flex;
 }
 
 .development-image > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
-
 
 .DevelopmentCenter > .development-text {
-    width: 50%;
-    display: flex;
-  
-    flex-direction: column;
-    gap: 60px;
-   
+  width: 50%;
+  display: flex;
 
+  flex-direction: column;
+  gap: 60px;
 }
-
-
-
 
 .development-text > h2 {
-    font-size: 40px;
-    color: #fff;
-     font-family: Protest;
+  font-size: 40px;
+  color: #fff;
+  font-family: Protest;
 }
 .development-text > p {
-    font-size: 25px;
-    color: #908f8f;
-    /* text-align: center; */
-    line-height: 40px;
-     font-family: Montserrat;
+  font-size: 20px;
+  color: #908f8f;
+  line-height: 40px;
+  font-family: Montserrat;
 }
 
+.development-text > .get-started-btn {
+  width: 30%;
+  height: 50px;
+  border-radius: 50px;
 
- .development-text > .get-started-btn {
-    width: 30%;
-    height: 50px;
-    border-radius: 50px;
-    /* font-size: 20px; */
-    font-weight: bold;
-    background-color: #4D61FF;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  font-weight: bold;
+  background-color: #4d61ff;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 896px) {
+  .DevelopmentCenter {
+    padding: 20px;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .DevelopmentCenter > .development-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .DevelopmentCenter > .development-text {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .development-text > .get-started-btn {
+    width: 100%;
+  }
+
+  .development-text > h2 {
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  .development-text > p {
+    font-size: 16px;
+  }
+
+  .development-text > a {
+    width: 100%;
+  }
 }
-
-
-
-@media screen and (max-width:896px) {
-    .DevelopmentCenter {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      
-    }
-
-    .DevelopmentCenter > .development-image  {
-        height: 300px;
-        width: 100%;
-    }
-
-
-    .DevelopmentCenter > .development-text  {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .development-text > .get-started-btn  {
-        width: 100%;
-    }
-
-    .development-text > h2  {
-        font-size: 22px;
-        font-weight: bolder;
-    }
-    .development-text > p  {
-        font-size: 16px;
-       
-    }
-
-    .development-text > a  {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-

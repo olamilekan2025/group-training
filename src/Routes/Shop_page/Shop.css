@@ -13,55 +13,55 @@
 }
 
 
-.tabs-wrapper {
+
+.tabs-wrapper.no-scroll {
   width: 100%;
-  overflow-x: auto;       
-  white-space: nowrap;    
-  scrollbar-width: none;   
-  -ms-overflow-style: none;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-.tabs-wrapper::-webkit-scrollbar {
-  display: none; 
+.tabs.no-animation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: none;
 }
 
-.tabs {
-  display: inline-flex;
-  gap: 50px;
-  border-bottom: 2px solid #ddd;
-  position: relative;
-  cursor: grab; 
-}
-
-.tabs:active {
-  cursor: grabbing;
-}
-
-.slider {
-  position: absolute;
-  bottom: -2px;
-  height: 3px;
-  background-color: #0072ff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.tabs button {
-  width: 300px;
-  height: 40px;
+.tabs.no-animation button {
+  width: 120px;
+  padding: 9px;
   border: none;
-  background-color: #4D61FF;
-  border-radius: 20px;
+ background-color: #0072ff;
+  border-radius: 10px;
   color: #fff;
   font-size: 14px;
   cursor: pointer;
-  flex-shrink: 0;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.tabs.no-animation button:hover {
+  background-color: #fff;
+  color: #4D61FF;
 }
 
-.tabs button.active {
+.tabs.no-animation button.active {
   font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  background: linear-gradient(135deg, #4D61FF, #000, #fff);
+
+
+
+
+  
+}
+
+/* Remove slider completely */
+.slider {
+  display: none !important;
 }
 
 
@@ -149,6 +149,57 @@
     padding: 40px 10px;
   }
 
+  .tabs-wrapper.no-scroll  {
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+
+
+
+  .tabs-wrapper.no-scroll {
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.tabs.no-animation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: none;
+}
+
+.tabs.no-animation button {
+  width: 160px;
+  padding: 9px;
+
+}
+.tabs.no-animation button:hover {
+  background-color: #fff;
+  color: #4D61FF;
+}
+
+.tabs.no-animation button.active {
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #fff;
+  background: linear-gradient(135deg, #4D61FF, #000, #fff);
+
+
+
+
+  
+}
+
+
   .package-grid {
   width: 100%;
   display: grid;
@@ -163,19 +214,20 @@
     display: flex;
   }
 
-  .tabs button  {
+  /* .tabs button  {
     width: 200px;
     height: 35px;
     font-size: 12px;
-  }
+    background-color: red;
+  } */
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .tabs {
     gap: 8px;
   }
 
-}
+} */
 
 
 
