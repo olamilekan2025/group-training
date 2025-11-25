@@ -1,233 +1,278 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+  font-family: Montserrat;
+  src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: Protest;
-    src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
+  font-family: Protest;
+  src: url(/src//assets/Montserrat-VariableFont_wght.ttf);
 }
 
 .Navigation {
-    width: 100%;
-    height: 70px;
-    padding: 20px 40px;
-    background-color: rgba(21, 23, 25, .8);
-    padding: 20px 60px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    z-index: 100;
-    position: relative;
-    position: sticky;
-    top: 0%;
-   
+  width: 100%;
+  height: 70px;
+  padding: 20px 40px;
+  background-color: rgba(21, 23, 25, 0.8);
+  padding: 20px 60px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  z-index: 100;
+  position: relative;
+  position: sticky;
+  top: 0%;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
 
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"); 
-
- svg {
-	font-family: "Bungee Outline", sans-serif;
-	width: 100%; height: 100%;
-} 
+svg {
+  font-family: "Bungee Outline", sans-serif;
+  width: 100%;
+  height: 100%;
+}
 svg text {
-	animation: stroke 10s infinite alternate;
-	stroke-width: 2;
-	stroke: #365FA0;
-	font-size: 27px;
-    font-family: Protest;
+  animation: stroke 10s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 27px;
+  font-family: Protest;
 }
 @keyframes stroke {
-	0%   {
-		fill: #FFF; stroke: rgba(54,95,160,1);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
-	}
-	70%  {fill: #fff; stroke: rgba(54,95,160,1); }
-	80%  {fill: #fff; stroke: rgba(54,95,160,1); stroke-width: 3; }
-	100% {
-		fill: #fff; stroke: rgba(54,95,160,0);
-		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
-	}
+  0% {
+    fill: #fff;
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: #fff;
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: #fff;
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: #fff;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 
-
-
-
-.Navigation>.navbar {
-    gap: 20px;
-    display: flex;
-
+.Navigation > .navbar {
+  gap: 20px;
+  display: flex;
 }
 
-
-
-.navbar>a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #fff;
-    padding: 8px;
-    font-family:  Montserrat;
+.navbar > a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  padding: 8px;
+  font-family: Montserrat;
 }
 
-
-.navbar>a:hover {
-    color: #4D61FF;
-  
+.navbar > a:hover {
+  color: #4d61ff;
 }
 
-.navbar>a.active {
-    color:#4D61FF;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 2px solid#4D61FF;
+.navbar > a.active {
+  color: #4d61ff;
+  border-bottom: 2px solid#4D61FF;
 }
 
-.dropdown-menu>a.active {
-    color:#4D61FF;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 2px solid#4D61FF;
+.dropdown-menu > a.active {
+  color: #4d61ff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid#4D61FF;
 }
 
-
-
-
-
-
-.dropdown-title>h3 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 200;
+.dropdown-title > h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
 }
-
 
 .togglemenu {
-    display: none;
+  display: none;
 }
 
+@media screen and (max-width: 896px) {
+  .Navigation {
+    padding: 20px;
+  }
 
+  svg text {
+    font-size: 20px;
+    stroke-width: 1;
+  }
 
-@media screen and (max-width:896px) {
-    .Navigation {
-        padding: 20px;
-    }
+  .Navigation > .logo {
+    font-size: 20px;
+    font-weight: 200;
+  }
 
-    .Navigation>.logo {
-        font-size: 20px;
-        font-weight: 200;
-    }
+  .Navigation > .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #4d61ff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 90%;
+    height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+  }
 
-    .Navigation>.navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #4D61FF;
-        position: absolute;
-        top: 62px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 1rem;
-        gap: 1rem;
-        transform: translateX(-100%);
-        transition: 0.3s ease-in-out;
-        z-index: 999;
-    }
+  .navbar.active {
+    transform: translateX(0);
+  }
 
-    .navbar.active {
-        transform: translateX(0);
-    }
+  .Navigation > .navbar {
+    gap: 10px;
+    padding: 10px;
+  }
 
-    .Navigation>.navbar {
-        gap: 10px;
-        padding: 10px;
-    }
+  .navbar > a {
+    color: #fff;
+  }
 
-    .navbar>a {
-        color: #fff;
-    }
+  .togglemenu {
+    display: block;
+  }
 
-    .togglemenu {
-        display: block;
-    }
+  .dropdown-title > h3 {
+    color: #fff;
+  }
 
-
-    .dropdown-title>h3 {
-        color: #fff;
-
-    }
-
-    .navbar>a.active {
-        color : #000
-    }
-
-
-
-
-
-
+  .navbar > a.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+  }
 }
-
 
 .aboutDropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-title {
-    padding: 8px;
-    color: #fff;
-    cursor: pointer;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .dropdown-menu {
-    display: none;
-    background-color: rgb(0,0,0,0.3);
-    border-bottom: 2px solid #4D61FF ;
-    /* border-left: 1px solid #121313; */
-    /* border-right: 1px solid #4D61FF; */
-    padding: 10px;
-    flex-direction: column;
-    border-radius: 15px;
-    gap: 10px;
-    position: absolute;
-    top: 55px;
-    left: 0;
-    width: 200px;
-    transition: all 0.3s ease-in-out
+  display: none;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-bottom: 2px solid #4d61ff;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 10px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 200px;
+  transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu.show {
-    display: flex;
+  display: flex;
 }
 
 .dropdown-menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
 }
-
-
 
 .dropdown-menu a:hover {
-    background-color: #4D61FF;
+  background-color: #4d61ff;
 }
 
+@media screen and (max-width: 896px) {
+  .dropdown-menu {
+    position: relative;
 
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+  }
 
-@media screen and (max-width:896px) {
-    .dropdown-menu {
-        position: relative;
-       
-        top: 0;
-        left: 0;
-        width: 100%;
-        border: none;
-     
-    }
+  .dropdown-title {
+    width: 100%;
+    color: #fff;
+  }
+}
 
-    .dropdown-title {
-        width: 100%;
-        color: #fff;
-    }
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cart-link:hover {
+  color: #f0c14b;
+  transform: scale(1.05);
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #4d61ff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.cart-count:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .cart-link {
+    margin-left: 10px;
+  }
+
+  .cart-icon {
+    font-size: 22px;
+  }
+
+  .cart-count {
+    top: -6px;
+    right: -6px;
+    font-size: 11px;
+    min-width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-color: #fff;
+    color: #4d61ff;
+  }
 }

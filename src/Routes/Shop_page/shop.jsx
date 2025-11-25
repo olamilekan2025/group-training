@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ShopStyle from "../../Dummy-Products/ShopStyle";
 import "./Shop.css";
+import { useCart } from "../../Context/CartContext";
 
-function Shop({ addToCart }) {
+function Shop() {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   const tabs = [
     "All Packages",
@@ -69,7 +71,7 @@ function Shop({ addToCart }) {
             <h3>{pkg.name}</h3>
 
             <div className="price">
-              <p>₦{pkg.price.toFixed(2)}</p>
+              <p>{pkg.price.toFixed(2)}</p>
             </div>
 
             <button
