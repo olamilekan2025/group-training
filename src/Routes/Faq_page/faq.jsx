@@ -45,12 +45,12 @@ function Faq() {
   return (
     <>
       <div className="faq-container">
-        {/* IMAGE */}
+        
         <div className="faqImage">
           <img src={img} alt="faq" />
         </div>
 
-        {/* TEXT */}
+        
         <div className="faq-text">
           <h2>Do you have Questions ?</h2>
           <p>
@@ -103,7 +103,7 @@ function Faq() {
           </div>
         </div>
 
-        {/* FAQ QUESTIONS */}
+        
         <div className="faq-Question">
           <h2>Ask</h2>
 

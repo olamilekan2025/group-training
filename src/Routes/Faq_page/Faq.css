@@ -71,16 +71,13 @@
 }
 
 .faqForm {
- 
   width: 40%;
-
   padding: 10px 0px;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
 }
 
 .title h2 {
- 
   margin-bottom: 25px;
   color: #fff;
   font-size: 25px;
@@ -108,11 +105,17 @@ label {
   gap: 20px;
 }
 
-.formCombination > div {
-  flex: 1;
-}
 
-input,
+input {
+   width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  background: white;
+  font-size: 15px;
+  transition: 0.3s ease;
+  outline: none;
+}
 textarea {
   width: 100%;
   padding: 12px;
@@ -124,7 +127,10 @@ textarea {
   outline: none;
 }
 
-input:focus,
+input:focus {  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
 textarea:focus {
   border-color: #2563eb;
   box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
@@ -164,10 +170,10 @@ button:hover {
     
   }
 
-  .faqImage img {
+  .faqImage > img {
     height: 300px;
   }
-  .faq-text h2  {
+  .faq-text >  h2  {
     font-size: 23px;
   }
 
@@ -205,7 +211,7 @@ button:hover {
 
 
 
-.faq-Question h2 {
+.faq-Question > h2 {
   font-size: 30px;
   color: #fff;
   margin-bottom: 20px;

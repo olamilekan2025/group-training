@@ -1,13 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { MdMenu } from "react-icons/md";
-import { FaTimes, FaAngleDown, FaAngleUp, FaShoppingCart } from "react-icons/fa";
+import { FaTimes, FaShoppingCart } from "react-icons/fa";
 import {useCart} from "../Context/CartContext"
 import "./Navbar.css";
 
 function Navbar() {
     const [isMobile, setIsMobile] = useState(false);
-    const [openDropdown, setOpenDropdown] = useState(false);
     const aboutRef = useRef(null);
 
     const { cart } = useCart(); 
@@ -23,9 +22,7 @@ function Navbar() {
         setOpenDropdown(false);
     };
 
-    const handleDropdownClick = () => {
-        setOpenDropdown(prev => !prev);
-    }
+  
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -42,18 +39,7 @@ function Navbar() {
     return (
         <div className="Navigation">
 
-            <div className="wrapper">
-                <Link to="/" className="logo-link">
-                    <svg>
-                        <text x="50%" y="50%" dy=".35em" textAnchor="end">
-                            JH WORLD
-                        </text>
-                    </svg>
-                </Link>
-
-               
-            </div>
-
+         <Link to="/" className="logo-link">JH WORLD</Link>
             <div className={isMobile ? "navbar active" : "navbar"}>
                 <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
                 
