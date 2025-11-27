@@ -10,9 +10,7 @@ function cartReducer(state, action) {
       return { ...state, cart: action.payload };
 
     case "ADD_TO_CART":
-      const existing = state.cart.find(
-        (item) => item.id === action.payload.id
-      );
+      const existing = state.cart.find((item) => item.id === action.payload.id);
       if (existing) {
         return {
           ...state,
@@ -53,9 +51,7 @@ function cartReducer(state, action) {
     case "REMOVE_ITEM":
       return {
         ...state,
-        cart: state.cart.filter(
-          (item) => item.id !== action.payload
-        ),
+        cart: state.cart.filter((item) => item.id !== action.payload),
       };
 
     case "CLEAR_CART":
@@ -69,49 +65,30 @@ function cartReducer(state, action) {
 export function CartProvider({ children }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
 
-  // ✅ Load cart safely (runs only on client)
   useEffect(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem("cart");
       if (saved) {
-        dispatch({
-          type: "SET_CART",
-          payload: JSON.parse(saved),
-        });
+        dispatch({ type: "SET_CART", payload: JSON.parse(saved) });
       }
     }
   }, []);
 
-  // ✅ Save cart to localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
       localStorage.setItem("cart", JSON.stringify(state.cart));
     }
   }, [state.cart]);
 
-  const addToCart = (product) =>
-    dispatch({ type: "ADD_TO_CART", payload: product });
-
-  const removeFromCart = (id) =>
-    dispatch({ type: "DECREASE_QTY", payload: id });
-
-  const increaseQty = (id) =>
-    dispatch({ type: "INCREASE_QTY", payload: id });
-
-  const removeItem = (id) =>
-    dispatch({ type: "REMOVE_ITEM", payload: id });
-
-  const clearCart = () => dispatch({ type: "CLEAR_CART" });
-
   return (
     <CartContext.Provider
       value={{
         cart: state.cart,
-        addToCart,
-        removeFromCart,
-        increaseQty,
-        removeItem,
-        clearCart,
+        addToCart: (p) => dispatch({ type: "ADD_TO_CART", payload: p }),
+        removeFromCart: (id) => dispatch({ type: "DECREASE_QTY", payload: id }),
+        increaseQty: (id) => dispatch({ type: "INCREASE_QTY", payload: id }),
+        removeItem: (id) => dispatch({ type: "REMOVE_ITEM", payload: id }),
+        clearCart: () => dispatch({ type: "CLEAR_CART" }),
       }}
     >
       {children}
@@ -119,4 +96,4 @@ export function CartProvider({ children }) {
   );
 }
 
-export const useCart = () => useContext<CartContext>(CartContext);
+export const useCart = () => useContext(CartContext);
